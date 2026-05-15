@@ -54,7 +54,15 @@ logger = logging.getLogger("aaron.devnet_audit")
 
 # ─── Constants ────────────────────────────────────────────────────────────────
 
-VAULT_PROGRAM_ID = Pubkey.from_string("JTX5uXTiZ1M3hJkjv5Cp5F8dr3Jc7nhJbQjCFmgEYA7")
+# Devnet program ID — separate from the mainnet JTX5uXTi… so Phantom's
+# Blowfish guard doesn't flag every devnet tx as "valid on mainnet". This
+# value MUST match the declare_id! used in `anchor build -- --features devnet`.
+VAULT_PROGRAM_ID = Pubkey.from_string(
+    os.environ.get(
+        "DEVNET_VAULT_PROGRAM_ID",
+        "CFXw63o3bH6mRHukLF495rKaU1bp5eqbnyVT3xNFitsz",
+    )
+)
 
 # Devnet genesis hash — sanity check against accidental mainnet exposure.
 # https://docs.solana.com/clusters#devnet — fixed at network bring-up.

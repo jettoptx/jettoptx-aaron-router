@@ -18,10 +18,10 @@ Phases shipped in v1:
 
 ```bash
 # On your local machine (where you have the keypair JSON):
-scp joe-agent-keypair.json jettoptx@100.85.183.16:/tmp/joe-agent.json
+scp joe-agent-keypair.json jettoptx@your-jetson-host:/tmp/joe-agent.json
 
 # On the Jetson:
-ssh jettoptx@100.85.183.16
+ssh jettoptx@your-jetson-host
 sudo install -d -m 0750 -o jettoptx -g jettoptx /etc/optx
 sudo install -m 0400 -o jettoptx -g jettoptx /tmp/joe-agent.json /etc/optx/joe-agent.json
 shred -u /tmp/joe-agent.json

@@ -11,7 +11,7 @@ declare_id!("OPTXMint111111111111111111111111111111");
 /// Flow: Xahau Hook → Wormhole VAA → This program → SPL OPTX mint
 ///
 /// Deploy: anchor build && anchor deploy --provider.cluster devnet
-/// RPC: https://devnet.helius-rpc.com/?api-key=98ca6456-20a8-4518-8393-1b9ee6c2b7f3
+/// RPC: read from HELIUS_API_KEY env var, e.g. https://devnet.helius-rpc.com/?api-key=$HELIUS_API_KEY
 
 #[program]
 pub mod optx_mint {

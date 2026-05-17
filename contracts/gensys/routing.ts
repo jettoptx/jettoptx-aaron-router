@@ -14,7 +14,7 @@ import { createHash } from "crypto";
 const AARON_BASE = "https://jettoptx-joe.taile11759.ts.net/aaron";
 const XRPL_HOOK_ACCOUNT = "rLXCpNStZodh9HjXn5DyoSFMKies1vKBUG";
 const ANODOS_ACCOUNT = "r21wnrTT2G52FcKrTBAb8hhn4aGSGn1eX";
-const HELIUS_RPC = "https://devnet.helius-rpc.com/?api-key=98ca6456-20a8-4518-8393-1b9ee6c2b7f3";
+const HELIUS_RPC = process.env.HELIUS_RPC_URL ?? `https://devnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY ?? ""}`;
 const OPTX_MINT_PROGRAM = "OPTXMint111111111111111111111111111111";
 
 /* ─── Types ─── */

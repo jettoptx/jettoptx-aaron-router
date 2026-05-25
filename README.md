@@ -119,7 +119,13 @@ Entropy is calculated via Shannon entropy of the AGT weights. Higher entropy (mo
 | $OPTX | Devnet | `4r9WxVWBNMphYfSyGBuMFYRLsLEnzUNquJPnpFessXRH` |
 | $JTX | Mainnet | `9XpJiKEYzq5yDo5pJzRfjSRMPL2yPfDQXgiN7uYtBhUj` |
 | $CSTB | Devnet | `4waAimBGeubfVBp4MX9vRh7iTWxoR2RYYqiuChqCH7rX` |
-| DePIN Program | Devnet | `91SqPNGRFrTgwSM3S7grZK8A6TCqn5STFGK4mAfqWMbQ` |
+| DePIN Program | **Mainnet** | `85sqs4upQiPrvk1NMuyfHVQoW1EGdgk8m2cQb7uMxXTF` |
+| DePIN Program (legacy) | Devnet | `91SqPNGRFrTgwSM3S7grZK8A6TCqn5STFGK4mAfqWMbQ` |
+| jett_vault | **Mainnet** | `JTX5uXTiZ1M3hJkjv5Cp5F8dr3Jc7nhJbQjCFmgEYA7` |
+| jett_vault (devnet) | Devnet | `FADKaMRVWdgsQXMhdBTLktdZqaEMA2VxmYcuhqhQ5SMC` |
+| Meteora DLMM pool | Mainnet | `54ecLhTa8HZg1bhcDNWiddd8p7UN7jq4HLWeLr1sRHMz` |
+| Treasury (tri-auth) | Mainnet | `9WssADzftzptNnMHLzPZYAFApUfE7qLYChicH1Wh6YD7` |
+| Tempo agent (EVM) | Mainnet | `0xf35f4021ceb48672c6f804cd57973b0cbb2b6c3d` |
 
 ## License
 
